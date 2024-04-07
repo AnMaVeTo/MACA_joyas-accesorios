@@ -1,0 +1,101 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/*renglones*/
+
+ul{
+    list-style-type: none;
+    padding: 0%;
+    margin: auto;
+}
+
+.f{
+    margin:3%;
+    float: left;
+    transform: scale(1.2);
+    margin-bottom: 0px;
+    padding-top: 10px;
+}
+
+.reng{
+    margin:3%;
+    text-decoration: none;
+    float: left;
+    margin-bottom: 0px;
+    padding-top: 15px;
+    transition: transform 0.3s;
+}
+
+.reng:hover{
+    transform: scale(1.2);
+}
+
+/*parrafos*/
+
+.texto{
+    width: 50%;
+    background-color: #ffffff;
+}
+
+.izquierda{
+    width: 49%;
+    background-color: aqua;
+    float: left;
+}
+
+.arribaD{
+    padding: 5px;
+    align-items: center;
+    width: 40%;
+    margin-right: 80px;
+    background-color: #000;
+    float: left;}
+
+.arriba{
+    margin: 0px;
+    padding: 5px;
+    align-items: center;
+    width: 100%;
+    float: left;
+    background-color: #677637;}
+
+/*tipo de letra*/
+    // <uniquifier>: Use a unique and descriptive class name
+    // <weight>: Use a value from 400 to 900
+    
+    .playfair-display-<uniquifier> {
+      font-family: "Playfair Display", serif;
+      font-optical-sizing: auto;
+      font-weight: <weight>;
+      font-style: normal;
+    }
+
+#t{
+    font-size: 70px;
+    font-weight: 200;
+    margin-left: 10%;
+    color: #ffffff;
+}
+
+/* Estilo para el carrusel */
+.carousel-container {
+    width: 35%;
+    overflow: hidden;
+    margin: 0 auto;
+    height: auto;
+    float: left;
+}
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.carousel img {
+    width: 100%;
+    height: auto;
+}
+
+.texto{
+    width: 50%;
+}
