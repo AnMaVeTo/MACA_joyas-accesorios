@@ -13,7 +13,7 @@ ul{
 
 .f{
     margin:6%;
-    margin-top: 4%;
+    margin-top: 3%;
     float: left;
     transform: scale(1.2);
     margin-bottom: 0px;
@@ -22,7 +22,7 @@ ul{
 .reng{
     text-decoration: none;
     margin:7%;
-    margin-top: 5%;
+    margin-top: 3%;
     float: left;
     margin-bottom: 0px;
     transition: transform 0.3s;
@@ -86,7 +86,7 @@ ul{
     margin: 0px;
     padding: 2px;
     float: right;
-    width: 38%;
+    width: 34%;
     padding-left: 5%;
 }
 
@@ -101,7 +101,7 @@ ul{
 
 
 #t{
-    font-size: 65px;
+    font-size: 55px;
     font-weight: 200;
     margin-left: 10%;
     color: #ffffff;
