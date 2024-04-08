@@ -8,19 +8,21 @@
 ul{
     list-style-type: none;
     padding: 0%;
-    margin: auto;
+    margin: 0px;
 }
 
 .f{
-    margin:3%;
+    margin:6%;
+    margin-top: 4%;
     float: left;
     transform: scale(1.2);
     margin-bottom: 0px;
 }
 
 .reng{
-    margin:3%;
     text-decoration: none;
+    margin:7%;
+    margin-top: 5%;
     float: left;
     margin-bottom: 0px;
     transition: transform 0.3s;
@@ -35,65 +37,82 @@ ul{
 .texto1{
     margin-top: 30px;
     float: left;
-    text-align: left;
+    text-align: justify;
     margin-left: 0;
     padding: 20px;
+    padding-right: 30px;
     width: 70%;
-    background-color: blue;
+    background-color: #A3B82F;
+    color: #F2E8CF;
+    font-size: 19px;
 }
 
 .texto2{
     margin-top: 30px;
     float: right;
-    text-align: right;
+    text-align: justify;
     margin-left: 0;
     padding: 20px;
+    padding-left: 30px;
     width: 40%;
-    background-color: blue;
+    background-color: #F2E8CF;
+    color: #677637;
+    font-size: 19px;
 }
 
 .izquierda{
-    width: 58%;
-    background-color: aqua;
+    width: 64.5%;
     float: left;
 }
 
 .arribaD{
-    padding: 5px;
     align-items: center;
-    width: 40%;
-    margin-right: 80px;
-    float: left;}
+    width: 35%;
+    padding-left: 5%;
+    padding-top: 0px;
+    float: left;
+}
 
 .arriba{
     margin: 0px;
-    padding: 5px;
+    padding: 0px;
     align-items: center;
     width: 100%;
     float: left;
-    background-color: #677637;}
+    background-color: #677637;
+}
 
-/*tipo de letra*/
-    // <uniquifier>: Use a unique and descriptive class name
-    // <weight>: Use a value from 400 to 900
-    
-    .playfair-display-<uniquifier> {
-      font-family: "Playfair Display", serif;
-      font-optical-sizing: auto;
-      font-weight: <weight>;
-      font-style: normal;
-    }
+.iconos{
+    margin: 0px;
+    padding: 2px;
+    float: right;
+    width: 38%;
+    padding-left: 5%;
+}
+
+.iconos2{
+    margin: 0px;
+    padding: 2px;
+    float: right;
+    width: 38%;
+    padding-left: 2%;
+}
+
+
 
 #t{
-    font-size: 70px;
+    font-size: 65px;
     font-weight: 200;
     margin-left: 10%;
     color: #ffffff;
+    margin: 0px;
+    padding: 0px; 
+
 }
 
 /* Estilo para el carrusel */
 .carousel-container {
-    width: 35%;
+    width: 83.3%;
     overflow: hidden;
     margin: 0 auto;
     height: auto;
@@ -108,6 +127,11 @@ ul{
     height: auto;
 }
 
+.derecha{
+    width: 34%;
+    float: left;
+}
+
 .derecha-d{
     width: 5%;
     float: left;
@@ -116,7 +140,6 @@ ul{
     align-items: right;
     margin-top: 120px;
     padding: 7px;
-    background-color: black;
 }
 
 .i{
