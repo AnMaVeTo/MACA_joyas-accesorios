@@ -148,31 +148,6 @@ ul{
     width: 88%;
     display: flex;
     overflow: hidden;
-    /*cambios recientes*/
-    float: left;
-    margin-top: 20px;
-    text-align: center;
-    /*cambios super recientes recientes*/
-    overflow-x: auto; /* Permite desplazamiento horizontal*/
-    white-space: nowrap; /* Evita que los elementos se envuelvan */
-    background-color: blue;
-    margin-left: 40px;
-
-  } 
-
-
-.carousel-wrapper {
-    display: inline-block; /* Alinea los elementos en línea */
-    padding: 0px;
-}
-
-
-/*dentro del carrusel*/
-
-.carousel-container {
-    width: 88%;
-    display: flex;
-    overflow: hidden;
     float: left;
     margin-top: 20px;
     text-align: center;
@@ -190,40 +165,39 @@ ul{
 .producto-container {
     display: inline-block;
     position: relative;
+    margin-right: -4px; /* Ajustamos el margen derecho para eliminar el espacio entre las imágenes */
 }
 
 .producto {
     text-decoration: none;
-    margin: 20px;
+    margin: 20px; /* Puedes ajustar este margen según tus preferencias */
     padding-left: 10px;
     padding-right: 10px;
-    margin-left: 0px;
-    margin-right: 0px;
-    transition: transform 0.3s;
     position: relative;
     z-index: 1;
-}
-
-.producto:hover {
-    transform: scale(1.04);
+    display: block;
 }
 
 .producto-text {
     position: absolute;
-    top: 50%; /* Alinea verticalmente */
-    left: 50%; /* Alinea horizontalmente */
-    transform: translate(-50%, -50%);
+    bottom: 0;
+    left: 0;
+    width: 30%; /* Ajusta al 30% del ancho del contenedor padre (imagen) */
     background-color: rgba(0, 0, 0, 0.7);
     color: white;
     font-size: 14px;
     font-weight: bold;
     text-align: center;
-    padding: 5px 10px;
+    padding: 5px 0;
     opacity: 0;
-    transition: opacity 0.3s;
-    z-index: 2; /* Asegura que esté por encima de las imágenes */
+    transition: opacity 0.3s, transform 0.3s; /* Agregamos transición al agrandar el texto */
+    transform: scale(1); /* Escalamos a tamaño original */
+    display: flex;
+    align-items: center; /* Alineación vertical del texto */
+    justify-content: center; /* Alineación horizontal del texto */
 }
 
 .producto-container:hover .producto-text {
     opacity: 1;
+    transform: scale(1.1); /* Escalamos al 110% al pasar el mouse */
 }
