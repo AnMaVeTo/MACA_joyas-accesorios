@@ -187,11 +187,6 @@ ul{
     padding: 0px;
 }
 
-.producto-container {
-    display: inline-block;
-    position: relative;
-}
-
 .producto {
     text-decoration: none;
     margin: 20px;
@@ -208,22 +203,24 @@ ul{
     transform: scale(1.04);
 }
 
-.producto-text {
+.producto:after {
+    content: attr(data-text);
     position: absolute;
-    top: 50%; /* Alinea verticalmente */
-    left: 50%; /* Alinea horizontalmente */
-    transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0.7);
-    color: white;
-    font-size: 14px;
-    font-weight: bold;
-    text-align: center;
-    padding: 5px 10px;
+    top: 100%; /* Sitúa el texto debajo del icono */
+    left: 50%;
+    transform: translateX(-50%);
     opacity: 0;
+    color: white; /* Cambia el color del texto a blanco */
+    font-size: 14px; /* Cambia el tamaño de la fuente del texto */
+    font-weight: bold; /* Hace el texto en negrita */
+    text-align: center; /* Centra el texto horizontalmente */
+    background-color: rgba(0, 0, 0, 0.7); /* Agrega un fondo oscuro semi-transparente */
+    padding: 5px 10px; /* Agrega un espacio alrededor del texto */
+    border-radius: 5px; /* Agrega bordes redondeados al fondo del texto */
     transition: opacity 0.3s;
-    z-index: 2; /* Asegura que esté por encima de las imágenes */
+    z-index: 2; /* Asegura que el texto esté por encima del carrusel */
 }
 
-.producto-container:hover .producto-text {
+.producto:hover::after {
     opacity: 1;
 }
