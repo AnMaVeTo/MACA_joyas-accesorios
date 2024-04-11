@@ -154,8 +154,7 @@ ul{
     text-align: center;
     /*cambios super recientes recientes*/
     overflow-x: auto; /* Permite desplazamiento horizontal*/
-    white-space: nowrap; /* Evita que los elementos se envuelvan */
-    background-color: blue;
+    white-space: nowrap;
     margin-left: 40px;
 
   } 
@@ -169,35 +168,36 @@ ul{
 
 /*dentro del carrusel*/
 
-.carousel-container {
-    width: 88%;
-    display: flex;
-    overflow: hidden;
-    float: left;
-    margin-top: 20px;
-    text-align: center;
-    overflow-x: auto;
-    white-space: nowrap;
-    background-color: blue;
-    margin-left: 40px;
-}
-
-.carousel-wrapper {
-    display: inline-block;
-    padding: 0px;
+.menuC{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow-x: auto; /* Permitir desplazamiento horizontal */
+    white-space: nowrap; /* Evitar el salto de línea */
 }
 
 .producto {
     text-decoration: none;
     margin: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 0px; /* Agrega un padding de 10px a cada lado para asegurar que el texto no esté demasiado pegado a la imagen */
     transition: transform 0.3s;
     position: relative;
     z-index: 1;
+    /*organizar verticalemte*/
+    display: inline-block; /* Mostrar elementos en línea */
+    margin-right: 20px; /* Espacio entre elementos */
+    vertical-align: top; /* Alinear en la parte superior */
+    width: 30%;
+    height: 100%;
 }
+
+.producto img {
+    max-width: 100%; /* Asegura que la imagen no exceda el tamaño del contenedor */
+    height: auto%; /* Mantiene la proporción de la imagen */
+}
+
 
 .producto:hover {
     transform: scale(1.04);
@@ -206,20 +206,20 @@ ul{
 .producto:after {
     content: attr(data-text);
     position: absolute;
-    top: 100%; /* Sitúa el texto debajo del icono */
-    left: 50%;
-    transform: translateX(-50%);
-    opacity: 0;
+    bottom: 0; /* Sitúa el texto en la parte inferior del contenedor */
+    left: 0; /* Alinea el texto a la izquierda */
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    text-align: center; /* Centra el texto horizontalmente */
+    background-color: rgba(0, 0, 0, 0.7); /* Agrega un fondo oscuro semi-transparente */
+    padding: 5px 0; /* Agrega un espacio alrededor del texto */
     color: white; /* Cambia el color del texto a blanco */
     font-size: 14px; /* Cambia el tamaño de la fuente del texto */
     font-weight: bold; /* Hace el texto en negrita */
-    text-align: center; /* Centra el texto horizontalmente */
-    background-color: rgba(0, 0, 0, 0.7); /* Agrega un fondo oscuro semi-transparente */
-    padding: 5px 10px; /* Agrega un espacio alrededor del texto */
-    border-radius: 5px; /* Agrega bordes redondeados al fondo del texto */
+    white-space: nowrap; /* Evita el salto de línea del texto */
     transition: opacity 0.3s;
-    z-index: 2; /* Asegura que el texto esté por encima del carrusel */
+    z-index: 3; /* Asegura que el texto esté por encima del carrusel */
 }
+
 
 .producto:hover::after {
     opacity: 1;
