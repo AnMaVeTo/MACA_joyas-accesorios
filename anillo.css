@@ -135,27 +135,27 @@ ul{
 /*footer*/
 
 .laterald{
-    width: 4%;
+    width: 2%;
     float: left;
     padding: 30px;
-    padding-right: 20px;
+    padding-right: 10px;
     text-align: right;
 }
 
 /*carrusel*/
 
 .carousel-container {
-    width: 88%;
+    width: 90%;
     display: flex;
     overflow: hidden;
     /*cambios recientes*/
     float: left;
-    margin-top: 20px;
+    margin-top: 40px;
     text-align: center;
     /*cambios super recientes recientes*/
     overflow-x: auto; /* Permite desplazamiento horizontal*/
     white-space: nowrap;
-    margin-left: 40px;
+    margin-left: 25px;
 
   } 
 
@@ -165,62 +165,88 @@ ul{
     padding: 0px;
 }
 
+.carousel-wrapper {
+    width: calc(100% - 120px); /* Restar el ancho de los botones */
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-container {
+    display: flex;
+    align-items: center;
+}
+
+.carousel-slide {
+    width: 87%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.prev-button, .next-button {
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #F2E8CF;
+    color: #677637;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.prev-button {
+    margin-left: 20px;
+}
+
+.next-button {
+    margin-right: 20px;
+}
+
 
 /*dentro del carrusel*/
 
-.menuC{
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    overflow-x: auto; /* Permitir desplazamiento horizontal */
-    white-space: nowrap; /* Evitar el salto de línea */
+/*tarjetas*/
+
+.item-container {
+    display: flex;
+    flex-direction: column; /* Alinear elementos en columna */
+    align-items: center;
+    width: 260px; /* Ancho de cada contenedor */
+    margin-right: 5px; /* Espacio entre contenedores */
+    float: left;
 }
 
-.producto {
-    text-decoration: none;
-    margin: 20px;
-    margin-left: 10px;
+.item-image {
     margin-right: 10px;
-    padding: 0px; /* Agrega un padding de 10px a cada lado para asegurar que el texto no esté demasiado pegado a la imagen */
-    transition: transform 0.3s;
-    position: relative;
-    z-index: 1;
-    /*organizar verticalemte*/
-    display: inline-block; /* Mostrar elementos en línea */
-    margin-right: 20px; /* Espacio entre elementos */
-    vertical-align: top; /* Alinear en la parte superior */
-    width: 27%;
-    height: 100%;
+    margin-bottom: 10px;
 }
 
-.producto img {
-    max-width: 100%; /* Asegura que la imagen no exceda el tamaño del contenedor */
-    height: auto; /* Mantiene la proporción de la imagen */
+.item-details {
+    flex-grow: 1;
+    margin-top: 10px;
 }
 
-
-.producto:hover {
-    transform: scale(1.04);
+.quantity {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
 }
 
-.producto:after {
-    content: attr(data-text);
-    position: absolute;
-    bottom: 0; /* Sitúa el texto en la parte inferior del contenedor */
-    left: 0; /* Alinea el texto a la izquierda */
-    width: 100%; /* Ocupa todo el ancho del contenedor */
-    text-align: center; /* Centra el texto horizontalmente */
-    background-color: rgba(0, 0, 0, 0.7); /* Agrega un fondo oscuro semi-transparente */
-    padding: 5px 0; /* Agrega un espacio alrededor del texto */
-    color: white; /* Cambia el color del texto a blanco */
-    font-size: 14px; /* Cambia el tamaño de la fuente del texto */
-    font-weight: bold; /* Hace el texto en negrita */
-    white-space: nowrap; /* Evita el salto de línea del texto */
-    transition: opacity 0.3s;
-    z-index: 3; /* Asegura que el texto esté por encima del carrusel */
+.quantity-btn {
+    padding: 5px 10px;
+    background-color: #ddd;
+    border: none;
+    cursor: pointer;
 }
 
+.quantity-value {
+    margin: 0 10px;
+}
 
-.producto:hover::after {
-    opacity: 1;
+.add-to-cart-btn {
+    padding: 10px;
+    background-color: #A3B82F;
+    color:#ffffff;
+    border: none;
 }
