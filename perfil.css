@@ -5,6 +5,8 @@
 
 /*renglones*/
 
+/*renglones*/
+
 ul{
     list-style-type: none;
     padding: 0%;
@@ -135,74 +137,185 @@ ul{
 /*footer*/
 
 .laterald{
-    width: 4%;
+    width: 2%;
     float: left;
     padding: 30px;
-    padding-right: 20px;
+    padding-right: 10px;
     text-align: right;
 }
 
-/* Estilos de la barra superior */
-.arriba {
-    background-color: #677637;
+/*registrar*/
+
+header {
     width: 100%;
-    float: left;
+    height: auto !important;
+    border-bottom: #d5dbdb 1px solid;
 }
 
-.arribaD {
-    width: 35%;
-    padding-left: 5%;
+.logo__instagram img {
+    margin-left: 18%;
+    padding: 1% 0 0 1%;
+    width: 8%;
+    height: auto;
 }
 
-#t {
-    font-size: 55px;
-    font-weight: 200;
-    color: #ffffff;
-    margin: 0;
-    padding: 0; 
+.container__Registrate {
+    max-width: 29%;
+    margin: auto;
+    background-color: #fff;
+    border: #d5dbdb 1px solid;
+    text-align: center;
 }
 
-.iconos {
-    float: right;
-    width: 34%;
-    padding-left: 5%;
+.registrarse{
+    width: 50%;
 }
 
-/* Estilos del carrusel */
-.carousel-container {
-    width: 88%;
+
+.logo__instagram {
+    padding: 2%;
+    padding: 4%;
+    max-width: 45%;
+    height: auto;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+
+h1 {
+    color: #7b7d7d;
+    padding: 2%;
+    font-size: 1vw;
+    font-weight: bold;
+    margin-bottom: 1vw;
+}
+
+.button_iniciarfacebook{
+    cursor: pointer;
+    border: none;
+    margin-left: 12.5%;
+    width: 75%;
     display: flex;
-    overflow-x: auto;
-    white-space: nowrap;
-    background-color: blue;
-    margin-left: 40px;
-    margin-top: 20px;
-    float: left;
+    justify-content: center;
+    align-items: center;
+    background-color: #00aaff;
+    color: white !important;
 }
 
-.carousel-wrapper {
-    display: inline-block;
-    padding: 0;
+.icono__facebook{
+    width: 11%;
+    border-radius: 25%;
+    margin-top: 1%;
+    margin-right: 4%;
+    margin-bottom: 1%;
 }
 
-.producto:after {
-    content: attr(data-text);
+.separador img {
+    padding: 2% 2% 0 2%;
+    width: 90%;
+}
+
+
+.button_iniciarfacebook{
+    cursor: pointer;
+    border: none;
+    margin-left: 12.5%;
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00aaff;
+    color: white !important;
+}
+
+.separador img {
+    padding: 2% 2% 0 2%;
+    width: 90%;
+}
+
+/* Estilos para el formulario */
+.form-group {
+    margin-bottom: 0.1%;
+  }
+  
+  label {
+    display: none; /* Oculta las etiquetas */
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    width: 75%;
+    padding: 3%;
+    margin-bottom: 1%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+.link_masinformacion{
+    color: #1460a6;
+    font-size: 0.8em;
+}
+  
+  /* Estilo para el botón de registro */
+  button {
+    margin-left: 13%;
+    display: block;
+    width: 75%;
+    padding: 10px;
+    margin-bottom: 10%;
+    background-color: #00aaff; /* Cambia el color de fondo */
+    color: #fff; /* Cambia el color del texto */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Cambiar el color del botón al pasar el mouse sobre él */
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  p {
+    padding: 2%;
+    margin-right: 10%;
+    margin-left: 10%;
+    color: #a4a7a7;
+    font-size: 0.85em;
+    margin-bottom: 1vw;
+}
+
+.Tienes__cuenta{
+    margin-top: -0.5em;
+}
+
+.Tienes__cuenta p {
+    color: black;
+    font-size: 0.8em;
+}
+
+.Tienes__cuenta a{
+    color: #0088cc;
+}
+
+/* Estilos para la lista de idiomas oculta */
+.oculto {
+    display: none;
+    font-size: 1vw; 
+    font-weight: 100;
     position: absolute;
-    top: 100%; /* Sitúa el texto debajo del icono */
-    left: 50%;
-    transform: translateX(-50%);
-    opacity: 0;
-    color: white; /* Cambia el color del texto a blanco */
-    font-size: 14px; /* Cambia el tamaño de la fuente del texto */
-    font-weight: bold; /* Hace el texto en negrita */
-    text-align: center; /* Centra el texto horizontalmente */
-    background-color: rgba(0, 0, 0, 0.7); /* Agrega un fondo oscuro semi-transparente */
-    padding: 5px 10px; /* Agrega un espacio alrededor del texto */
-    border-radius: 5px; /* Agrega bordes redondeados al fondo del texto */
-    transition: opacity 0.3s;
-    z-index: 2; /* Asegura que el texto esté por encima del carrusel */
+    top: -49.5vw; 
+    background-color: white;
+    list-style: none;
+    padding: 0;
+    border: 1px solid #ccc;
+    width: 15vw; 
 }
 
-.producto:hover::after {
-    opacity: 1;
+.oculto li:hover {
+    background-color: rgb(66, 97, 236);
+    color: white;
+}
+
+/* Estilos para el pie de página */
+.p__footer {
+    color: rgb(115, 115, 115);
 }
