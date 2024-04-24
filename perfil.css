@@ -274,3 +274,7 @@ h1 {
 .titulo2{
     font-size: 30px;
 }
+
+a{
+    text-decoration: none;
+}
