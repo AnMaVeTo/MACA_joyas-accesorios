@@ -11,16 +11,6 @@ ul{
     margin: 0px;
 }
 
-.f{
-    margin:6%;
-    margin-top: 3%;
-    float: left;
-    transform: scale(1.2);
-    margin-bottom: 0px;
-    position: relative; /* Añadido para establecer un contexto de apilamiento */
-    z-index: 3; /* Asegura que .f esté por encima de .reng */
-}
-
 .reng{
     text-decoration: none;
     margin:7%;
@@ -55,28 +45,6 @@ ul{
 }
 
 .reng:hover::after {
-    opacity: 1;
-}
-
-.f::after {
-    content: attr(data-text);
-    position: absolute;
-    top: 100%; /* Sitúa el texto debajo del icono */
-    left: 50%;
-    transform: translateX(-50%);
-    opacity: 0;
-    color: white; /* Cambia el color del texto a blanco */
-    font-size: 14px; /* Cambia el tamaño de la fuente del texto */
-    font-weight: bold; /* Hace el texto en negrita */
-    text-align: center; /* Centra el texto horizontalmente */
-    background-color: rgba(0, 0, 0, 0.7); /* Agrega un fondo oscuro semi-transparente */
-    padding: 5px 10px; /* Agrega un espacio alrededor del texto */
-    border-radius: 5px; /* Agrega bordes redondeados al fondo del texto */
-    transition: opacity 0.3s;
-    z-index: 3; /* Asegura que el texto esté por encima del carrusel */
-}
-
-.f:hover::after {
     opacity: 1;
 }
 
