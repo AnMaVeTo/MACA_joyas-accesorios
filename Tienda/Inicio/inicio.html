@@ -14,33 +14,65 @@
       rel="stylesheet"
     />
   </head>
-  <main>
+  
     <body>
-      <div class="arriba">
-        <div class="arribaD">
-          <p id="t">MACA</p>
+      <header>
+        <div class="arriba">
+          <a href="../Inicio/inicio.html">
+            <div class="arribaD">
+              <p id="t">MACA</p>
+            </div>
+          </a>
+    
+    
+          <div class="iconos">
+            <div class="menu">
+              <div class="reng" data-text="Inicio">
+                <a href="../Inicio/inicio.html">
+                  <img src="../Assets/img/casa.png" width="35px" />
+                </a>
+              </div>
+              <div class="reng" data-text="Catálogo">
+                <a href="../Catalogo/catalogo.html">
+                  <img src="../Assets/img/revista.png" width="35px" />
+                </a>
+              </div>
+              <div class="reng" data-text="Carrito">
+                <a href="#">
+                  <img class="icont-cart" src="../Assets/img/carrito.png" width="35px" />
+                  <div class="count-products">
+                    <span id="contador-productos">0</span>
+                  </div>
+                </a>
+                <div class="container-cart-products hidden-cart">
+                  <div class="container-cart-icon" style="width: 40px;">
+    
+                  </div>
+                  <div class="cart-product">
+                    <div class="info-cart-product">
+                      <span class="catidad-producto-carrito">1</span>
+                      <p class="titulo-carrito-producto">aretes redondos</p>
+                      <span class="precio-producto-carrito">$20.000</span>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                      stroke="currentColor" class="icon-close">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                    </svg>
+                  </div>
+                  <div class="cart-total">
+                    <h3>Total:</h3>
+                    <span class="cart-total">$100.000</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-
-        <div class="iconos">
-          <ul class="menu">
-            <li class="f" data-text="Inicio">
-              <a href="inicio.html"
-                ><img src="../Assets/img/casa.png" width="30px"
-              /></a>
-            </li>
-            <li class="reng" data-text="Catálogo">
-              <a href="../Catalogo/catalogo.html"
-                ><img src="../Assets/img/revista.png" width="30px"
-              /></a>
-            </li>
-            <li class="reng" data-text="Carrito">
-              <a href="carrito.html"
-                ><img src="../Assets/img/carrito.png" width="30px"
-              /></a>
-            </li>
-          </ul>
         </div>
-      </div>
+    
+      </header>
+    
+      <main>
 
       <div class="izquierda">
         <div class="texto1">
@@ -128,6 +160,8 @@
       </div>
 
       <script src="carusel.js"></script>
-    </body>
-  </main>
+    </main>
+    <script src="../JS/index.js"></script>
+  </body>
+
 </html>
